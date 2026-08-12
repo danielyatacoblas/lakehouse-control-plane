@@ -1,0 +1,9 @@
+flowchart LR
+    A[Submit execution] --> B[Validate pipeline]
+    B --> C[Create run metadata]
+    C --> D[Trigger Databricks job]
+    D --> E[Track status]
+    E --> F{Outcome}
+    F -->|success| G[Publish completion]
+    F -->|failure| H[Capture diagnostics]
+    H --> I[Retry or escalate]

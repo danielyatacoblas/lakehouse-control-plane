@@ -1,0 +1,8 @@
+flowchart LR
+    U[React DataOps Console] --> API[Spring Boot Control API]
+    API --> E[Execution Orchestrator]
+    E --> DBX[Azure Databricks Jobs]
+    E --> ADLS[(Azure Data Lake)]
+    E --> DB[(PostgreSQL Metadata)]
+    API --> K[(Kafka Events)]
+    K --> O[Monitoring and Audit]
