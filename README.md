@@ -1,5 +1,33 @@
 # Lakehouse Control Plane
 
+## Objetivo del proyecto
+
+Demostrar gobierno operativo de Azure Databricks desde Java 17: ejecución
+idempotente, costos, aprobación, reintentos por throttling, calidad, incidentes
+y auditoría. La consola React presenta pipelines Bronze → Silver → Gold y sus
+controles sin requerir gasto de Azure para la demo local.
+
+## Evidencia visual
+
+![Consola DataOps Lakehouse](docs/screenshots/dashboard-desktop.png)
+
+| Arquitectura | Flujo funcional | GitFlow |
+|---|---|---|
+| ![Arquitectura](diagrams/rendered/architecture.svg) | ![Flujo](diagrams/rendered/flow.svg) | ![GitFlow](diagrams/rendered/gitflow.svg) |
+
+Disponible también la [vista móvil](docs/screenshots/dashboard-mobile.png).
+
+## Consola web
+
+```bash
+cd frontend
+npm ci
+npm run dev
+```
+
+La UI abre en `http://localhost:5180` y enruta la API hacia
+`http://localhost:8098`.
+
 Backend Java 17 + Spring Boot para gobernar ejecuciones Azure Databricks: catálogo, parámetros seguros, costo, aprobación, Jobs API 2.2, calidad, incidentes y auditoría.
 
 ## Capacidades demostrables
