@@ -1,0 +1,21 @@
+spring:
+  application: { name: lakehouse-control-plane }
+  profiles: { default: local-fake }
+  datasource:
+    url: ${POSTGRES_URL:jdbc:postgresql://localhost:5448/lakehouse}
+    username: ${POSTGRES_USER:lakehouse}
+    password: ${POSTGRES_PASSWORD:lakehouse}
+  jackson: { time-zone: UTC }
+server: { port: "${PORT:8098}", shutdown: graceful }
+databricks:
+  host: ${DATABRICKS_HOST:http://localhost:8098/simulator}
+  token: ${DATABRICKS_TOKEN:local-token}
+  retry: { max-attempts: 3 }
+lakehouse: { poll-interval: 500 }
+management:
+  endpoints:
+    web:
+      exposure: { include: "health,info,prometheus" }
+  endpoint:
+    health:
+      probes: { enabled: true }

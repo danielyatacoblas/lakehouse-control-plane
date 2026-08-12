@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment: { POSTGRES_DB: lakehouse, POSTGRES_USER: lakehouse, POSTGRES_PASSWORD: lakehouse }
+    ports: ["5448:5432"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U lakehouse -d lakehouse"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
