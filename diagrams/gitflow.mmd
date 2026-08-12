@@ -1,0 +1,7 @@
+flowchart LR
+    F[feature branch] --> D[develop]
+    D --> R[release branch]
+    R --> M[main and version tag]
+    R --> D
+    H[hotfix branch] --> M
+    H --> D
