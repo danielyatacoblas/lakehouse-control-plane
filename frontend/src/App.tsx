@@ -10,6 +10,7 @@ type ApiState = 'checking'|'online'|'offline';
 type Theme = 'dark'|'light';
 
 const icons = [Activity, Boxes, Server, ShieldCheck, Gauge];
+const portfolioRelease = project.name === 'OrderFlow' ? 'v0.4.0' : 'v0.3.0';
 
 export default function App() {
   const params = new URLSearchParams(window.location.search);
@@ -52,7 +53,7 @@ export default function App() {
       <button className="close" aria-label="Cerrar menú" onClick={()=>setMobile(false)}><X/></button>
       <div className="brand"><span className="brand-mark">{project.initials}</span><div><b>{project.name}</b><small>Operations</small></div></div>
       <nav>{project.nav.map((item,index)=>{const Icon=icons[index]??Server;return <button className={index===activeView?'active':''} aria-current={index===activeView?'page':undefined} onClick={()=>selectView(index)} key={item}><span><Icon size={17}/></span>{item}</button>})}</nav>
-      <div className="sidebar-card"><Command size={19}/><b>Java Platform</b><p>Cinco vistas operativas con evidencia reproducible.</p><span>release {project.release ?? 'portfolio'}</span></div>
+      <div className="sidebar-card"><Command size={19}/><b>Java Platform</b><p>Cinco vistas operativas con evidencia reproducible.</p><span>release {project.release ?? portfolioRelease}</span></div>
       <div className="profile"><span>AR</span><div><b>Andrea R.</b><small>Platform operator</small></div></div>
     </aside>
     <main>

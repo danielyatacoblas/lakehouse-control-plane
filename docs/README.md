@@ -4,7 +4,7 @@
 |---|---|
 | [Arquitectura](ARCHITECTURE.md) | Jobs API, costos, calidad y auditoría |
 | [Runbook](RUNBOOK.md) | Operación, diagnóstico y recuperación |
-| [Capturas](screenshots) | Consola DataOps en escritorio y móvil |
+| [Capturas](screenshots) | Cinco vistas en temas claro/oscuro y evidencia móvil |
 | [Diagramas](../diagrams) | Arquitectura, ejecución y GitFlow |
 | [Databricks](../databricks) | Artefactos de la integración |
 | [Infraestructura](../infra) | Bicep para Azure |
