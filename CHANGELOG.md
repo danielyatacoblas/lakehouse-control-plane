@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.2 - 2026-08-13
+
+- Rebuild the repository landing page as a complete portfolio case study.
+- Add documentation index, reproducible scripts and MIT license.
+- Align visual evidence with the published release.
+
 ## 0.2.1 - 2026-08-13
 
 - Restore executable permission for the Gradle wrapper on Linux runners.
