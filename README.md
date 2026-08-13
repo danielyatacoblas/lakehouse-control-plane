@@ -14,7 +14,7 @@ aprobaciones, calidad, reintentos y auditoría desde Java.</i></p>
   <img src="https://img.shields.io/badge/Azure_Databricks-Jobs_API_2.2-FF3621?logo=databricks&logoColor=white" alt="Azure Databricks">
   <img src="https://img.shields.io/badge/Azure-Bicep-0078D4?logo=microsoftazure&logoColor=white" alt="Azure Bicep">
   <img src="https://img.shields.io/badge/PostgreSQL-auditoría-4169E1?logo=postgresql&logoColor=white" alt="PostgreSQL">
-  <img src="https://img.shields.io/badge/pruebas-4_aprobadas-2EAD33" alt="4 pruebas">
+  <img src="https://img.shields.io/badge/pruebas-5_aprobadas-2EAD33" alt="5 pruebas">
   <a href="LICENSE"><img src="https://img.shields.io/badge/licencia-MIT-blue" alt="MIT"></a>
 </p>
 
@@ -70,9 +70,15 @@ flujo puede ejecutarse sin Databricks real.
 
 ## Capturas
 
-| Escritorio | Móvil |
-|---|---|
-| <img src="docs/screenshots/dashboard-desktop.png" alt="Lakehouse escritorio" width="620"> | <img src="docs/screenshots/dashboard-mobile.png" alt="Lakehouse móvil" width="230"> |
+| Pantalla | Claro | Oscuro |
+|---|---|---|
+| Control plane | ![Control plane claro](docs/screenshots/01-control-plane-light.png) | ![Control plane oscuro](docs/screenshots/01-control-plane-dark.png) |
+| Pipelines | ![Pipelines claros](docs/screenshots/02-pipelines-light.png) | ![Pipelines oscuros](docs/screenshots/02-pipelines-dark.png) |
+| Ejecuciones | ![Ejecuciones claras](docs/screenshots/03-ejecuciones-light.png) | ![Ejecuciones oscuras](docs/screenshots/03-ejecuciones-dark.png) |
+| Calidad | ![Calidad clara](docs/screenshots/04-calidad-light.png) | ![Calidad oscura](docs/screenshots/04-calidad-dark.png) |
+| Costos y SLA | ![Costos y SLA claro](docs/screenshots/05-costos-sla-light.png) | ![Costos y SLA oscuro](docs/screenshots/05-costos-sla-dark.png) |
+
+<p align="center"><img src="docs/screenshots/dashboard-mobile.png" alt="Lakehouse móvil" width="230"></p>
 
 ---
 
@@ -180,6 +186,9 @@ cd frontend && npm ci && npm test && npm run build
 ---
 
 ## GitFlow
+
+El gráfico reproduce el historial real hasta `v0.3.0`, desde las ramas de
+trabajo hasta la release etiquetada y su reintegración en `develop`.
 
 <p align="center">
   <img src="diagrams/rendered/gitflow.svg" alt="GitFlow Lakehouse" width="760">

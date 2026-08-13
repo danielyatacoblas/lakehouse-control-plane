@@ -1,0 +1,56 @@
+.app{background:#07111f;color:#dce8f7}
+.page-intro{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:30px}
+.page-intro h1{font-size:clamp(34px,4vw,52px);line-height:1.05;letter-spacing:-.05em;margin:14px 0 12px}
+.page-intro p{max-width:720px;margin:0;color:#8ca0b6;font-size:13px;line-height:1.7}
+.view-badge{display:inline-flex;align-items:center;white-space:nowrap;border:1px solid var(--border);border-radius:999px;padding:7px 10px;color:#7f94aa;font:10px DM Mono}
+.metrics.compact{grid-template-columns:repeat(3,1fr)}
+.metrics.compact article{min-height:105px}
+.section-summary{margin-top:14px}
+.section-summary h2{font-size:15px;margin:7px 0 20px}
+.stage-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.stage-cards article{border:1px solid var(--border);border-radius:10px;padding:15px;display:grid;gap:7px;background:rgba(255,255,255,.018)}
+.stage-cards article>span{font:10px DM Mono;color:var(--accent)}
+.stage-cards b{font-size:11px}
+.stage-cards small{color:#71859a;font-size:9px}
+.lower-grid{margin-top:14px}
+.capacity-list{display:grid;gap:17px}
+.capacity-list>div{display:grid;grid-template-columns:130px 1fr 40px;gap:13px;align-items:center;font-size:10px}
+.capacity-list span{color:#a8bacb}
+.capacity-list i{height:7px;border-radius:10px;background:rgba(255,255,255,.05);overflow:hidden}
+.capacity-list i b{display:block;height:100%;background:var(--accent);border-radius:inherit}
+.capacity-list strong{font:10px DM Mono;color:var(--accent);text-align:right}
+.decision-panel>article{display:grid;grid-template-columns:9px 1fr auto;gap:12px;align-items:center;padding:15px 0;border-top:1px solid var(--border)}
+.decision-panel>article:first-of-type{border-top:0}
+.decision-panel article b{display:block;font-size:10px}
+.decision-panel article small{display:block;color:#70849a;font-size:9px;margin-top:5px}
+.decision-panel article button{border:1px solid var(--border);background:transparent;color:#9aafc3;border-radius:7px;padding:6px 10px;font-size:9px}
+.health-panel{margin-bottom:14px}
+.health-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}
+.health-grid article{display:grid;grid-template-columns:auto 1fr auto;gap:11px;align-items:center;border:1px solid var(--border);border-radius:10px;padding:14px}
+.health-grid svg{color:var(--accent)}
+.health-grid b{display:block;font-size:10px}
+.health-grid small{display:block;color:#70849a;font-size:9px;margin-top:4px}
+.health-grid>article>span{font:10px DM Mono;color:var(--accent)}
+.app.light{color:#142337;background:#f3f6fa;--border:rgba(38,61,86,.16);--muted:#63758a}
+.app.light .sidebar{background:rgba(255,255,255,.96)}
+.app.light header{background:rgba(248,250,252,.9)}
+.app.light .brand b,.app.light .profile b,.app.light .hero h1,.app.light .page-intro h1,.app.light .metrics strong,.app.light .panel h2,.app.light .flow-step b,.app.light .activity-item b,.app.light td b,.app.light td code,.app.light .stage-cards b,.app.light .decision-panel article b,.app.light .health-grid b{color:#142337}
+.app.light .sidebar nav button{color:#607186}
+.app.light .sidebar nav button:hover,.app.light .sidebar nav button.active{color:#102033;background:#eaf0f6}
+.app.light .sidebar-card,.app.light .metrics article,.app.light .panel{background:#fff;box-shadow:0 8px 30px rgba(34,54,75,.045)}
+.app.light .profile>span{background:#e4edf5}
+.app.light .search{background:#fff;color:#63758a}
+.app.light .icon-button{color:#52677d;background:#fff}
+.app.light .hero h1 em{color:#71869d}
+.app.light .hero p,.app.light .page-intro p{color:#5f7389}
+.app.light .flow-icon{background:#fff}
+.app.light .system-message{background:color-mix(in srgb,var(--accent),white 92%)}
+.app.light .chips{background:#f4f7fa}
+.app.light .chips button.selected{background:#dfe8f1;color:#22364b}
+.app.light th{color:#60758b}
+.app.light td{color:#52677d}
+.app.light .stage-cards article{background:#f8fafc}
+.app.light .capacity-list i{background:#e5ebf1}
+.app.light footer{color:#60758b}
+@media(max-width:760px){.page-intro{display:block}.view-badge{margin-top:16px}.metrics.compact{grid-template-columns:1fr}.stage-cards,.health-grid{grid-template-columns:1fr}.capacity-list>div{grid-template-columns:90px 1fr 36px}}
+

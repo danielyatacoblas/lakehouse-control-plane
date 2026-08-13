@@ -1,7 +1,49 @@
-flowchart LR
-    F[feature branch] --> D[develop]
-    D --> R[release branch]
-    R --> M[main and version tag]
-    R --> D
-    H[hotfix branch] --> M
-    H --> D
+gitGraph
+   commit id: "MVP backend verificado" tag: "v0.1.0"
+   branch develop
+   checkout develop
+   branch feature/portfolio-visual-experience
+   commit id: "feat: consola operativa React"
+   checkout develop
+   merge feature/portfolio-visual-experience id: "merge: experiencia visual"
+   branch fix/ignore-frontend-build-metadata
+   commit id: "fix: metadata de build"
+   checkout develop
+   merge fix/ignore-frontend-build-metadata id: "merge: correccion de build"
+   branch release/0.2.0
+   commit id: "chore: preparar 0.2.0"
+   checkout main
+   merge release/0.2.0 id: "release 0.2.0" tag: "v0.2.0"
+   checkout develop
+   merge release/0.2.0 id: "merge back 0.2.0"
+   checkout main
+   branch hotfix/ci-linux-executable
+   commit id: "fix: CI ejecutable en Linux"
+   checkout main
+   merge hotfix/ci-linux-executable id: "hotfix de CI" tag: "v0.2.1"
+   checkout develop
+   merge hotfix/ci-linux-executable id: "merge back hotfix"
+   branch docs/portfolio-presentation
+   commit id: "docs: caso de estudio"
+   checkout develop
+   merge docs/portfolio-presentation id: "merge: presentacion"
+   branch release/0.2.2
+   commit id: "chore: preparar 0.2.2"
+   checkout main
+   merge release/0.2.2 id: "release 0.2.2" tag: "v0.2.2"
+   checkout develop
+   merge release/0.2.2 id: "merge back 0.2.2"
+   branch feature/multi-view-console
+   commit id: "feat: cinco vistas y dos temas"
+   checkout develop
+   merge feature/multi-view-console id: "merge: consola multivista"
+   branch docs/full-portfolio-evidence
+   commit id: "docs: capturas y GitFlow real"
+   checkout develop
+   merge docs/full-portfolio-evidence id: "merge: evidencia completa"
+   branch release/0.3.0
+   commit id: "chore: preparar 0.3.0"
+   checkout main
+   merge release/0.3.0 id: "release 0.3.0" tag: "v0.3.0"
+   checkout develop
+   merge release/0.3.0 id: "merge back 0.3.0"
