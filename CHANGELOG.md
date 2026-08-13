@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.0 - 2026-08-13
+
+- Turn every navigation item into a distinct operational view.
+- Add accessible light and dark themes with tested URL state.
+- Document all five screens with reproducible captures in both themes.
+- Replace the generic branch diagram with the real GitFlow history.
+
 ## 0.2.2 - 2026-08-13
 
 - Rebuild the repository landing page as a complete portfolio case study.
