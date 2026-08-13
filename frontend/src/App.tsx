@@ -18,7 +18,7 @@ export default function App() {
       <button className="close" aria-label="Cerrar menú" onClick={()=>setMobile(false)}><X/></button>
       <div className="brand"><span className="brand-mark">{project.initials}</span><div><b>{project.name}</b><small>Operations</small></div></div>
       <nav>{project.nav.map((item,index)=><button className={index===0?'active':''} key={item}><span>{index===0?<Activity size={17}/>:index===1?<Boxes size={17}/>:<Server size={17}/>}</span>{item}</button>)}</nav>
-      <div className="sidebar-card"><Command size={19}/><b>Java Platform</b><p>Observabilidad y operaciones en una sola vista.</p><span>release {project.release ?? 'v0.2.0'}</span></div>
+      <div className="sidebar-card"><Command size={19}/><b>Java Platform</b><p>Observabilidad y operaciones en una sola vista.</p><span>release {project.release ?? 'v0.2.2'}</span></div>
       <div className="profile"><span>AR</span><div><b>Andrea R.</b><small>Platform operator</small></div></div>
     </aside>
     <main>
